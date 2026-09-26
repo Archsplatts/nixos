@@ -14,8 +14,12 @@ hardware.amdgpu.overdrive.enable = true;
 
 programs.zsh.enable = true;
 users.extraUsers.myuser = {
-  shell = pkgs.zsh;
+	isNormalUser = true;
+	group = "myuser";
+  	shell = pkgs.zsh;
 };
+
+users.extraGroups.myuser = {};
 
 programs.zsh = {
   enableCompletion = true;
