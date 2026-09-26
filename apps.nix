@@ -21,6 +21,7 @@
 		pkgs.steam
 		pkgs.thunderbird
 		pkgs.xarchiver
+		pkgs.xfce4-whiskermenu-plugin
 		pkgs.zathura
 		pkgs.zathura-pdf-mupdf
 	];
