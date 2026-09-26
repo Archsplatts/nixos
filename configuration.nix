@@ -33,7 +33,7 @@ programs.zsh = {
   ];
 };
 
-boot.loader.systemd-boot.configurationLimit = 3;
+boot.loader.systemd-boot.configurationLimit = 5;
 
 	nixpkgs.config.allowUnfree = true;
 
