@@ -9,8 +9,7 @@
 		pkgs.galculator
 		pkgs.lact
 		pkgs.lollypop
-		pkgs.mpv
-		pkgs.nm-connection-editor
+		pkgs.networkmanagerapplet
 		pkgs.picard
 		pkgs.protonup-qt
 		pkgs.qbittorrent
@@ -23,6 +22,6 @@
 		pkgs.xarchiver
 		pkgs.xfce4-whiskermenu-plugin
 		pkgs.zathura
-		pkgs.zathura-pdf-mupdf
+		pkgs.zathuraPkgs.zathura_pdf_mupdf
 	];
 }
