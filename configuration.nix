@@ -45,4 +45,12 @@ programs.thunar.plugins = with pkgs; [
 	thunar-volman
 ];
 
+users.users."bloods" = {
+	isNormalUser = true;
+	description = "bloods";
+	group = "bloods";
+	extraGroups = [ "networkmanager" "wheel" ];
+};
+
+users.groups.bloods = {};
 }
