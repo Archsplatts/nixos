@@ -25,19 +25,20 @@ programs.zsh = {
   enableCompletion = true;
   autosuggestions.enable = true;
   syntaxHighlighting.enable = true;
-
   histSize = 10000;
   histFile = "$HOME/.zsh_history";
-  setOptions = [
-    "HIST_IGNORE_ALL_DUPS"
-  ];
+  setOptions = [ "HIST_IGNORE_ALL_DUPS" ];
 };
 
 boot.loader.systemd-boot.configurationLimit = 5;
 
 	nixpkgs.config.allowUnfree = true;
 
-	system.autoUpgrade.enable = true;
+	system.autoUpgrade = {
+		enable = true;
+		dates = "Fri *-*-* 09:00:00";
+	};
+
 	system.autoUpgrade.allowReboot = true;
 
 programs.thunar.plugins = with pkgs; [
