@@ -1,6 +1,5 @@
 { pkgs, ... }:
 
-
 {
 	environment.systemPackages = [
 		pkgs.gamemode
