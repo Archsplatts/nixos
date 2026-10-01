@@ -4,6 +4,7 @@
 	environment.systemPackages = [
 		pkgs.brave
 		pkgs.discord
+		pkgs.file-roller
 		pkgs.gnome-disk-utility
 		pkgs.impression
 		pkgs.galculator
@@ -19,7 +20,6 @@
 		pkgs.rofi
 		pkgs.steam
 		pkgs.thunderbird
-		pkgs.xarchiver
 		pkgs.xfce4-whiskermenu-plugin
 		pkgs.zathura
 		pkgs.zathuraPkgs.zathura_pdf_mupdf
