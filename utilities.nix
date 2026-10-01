@@ -8,9 +8,7 @@
 		pkgs.dust
 		pkgs.eza
 		pkgs.fastfetch
-		pkgs.gamemode
 		pkgs.git
-		pkgs.mangohud
 		pkgs.micro
 		pkgs.starship
 		pkgs.termdown
