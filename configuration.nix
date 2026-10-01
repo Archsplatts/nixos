@@ -5,7 +5,6 @@
 	[
 		./hardware-configuration.nix
 		./apps.nix
-		./services.nix
 		./theme.nix
 		./utilities.nix
 	];
