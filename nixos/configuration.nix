@@ -9,25 +9,8 @@
 		./utilities.nix
 	];
 
-hardware.amdgpu.overdrive.enable = true;
-
-programs.zsh.enable = true;
-users.extraUsers.myuser = {
-	isNormalUser = true;
-	group = "myuser";
-  	shell = pkgs.zsh;
-};
-
-users.extraGroups.myuser = {};
-
-programs.zsh = {
-  enableCompletion = true;
-  autosuggestions.enable = true;
-  syntaxHighlighting.enable = true;
-  histSize = 10000;
-  histFile = "$HOME/.zsh_history";
-  setOptions = [ "HIST_IGNORE_ALL_DUPS" ];
-};
+hardware.amdgpu.overdrive.enable = false;
+programs.steam.enable = false;
 
 boot.loader.systemd-boot.configurationLimit = 5;
 
@@ -38,19 +21,9 @@ boot.loader.systemd-boot.configurationLimit = 5;
 		dates = "Fri *-*-* 09:00:00";
 	};
 
-	system.autoUpgrade.allowReboot = true;
+	system.autoUpgrade.allowReboot = false;
 
 programs.thunar.plugins = with pkgs; [
 	thunar-archive-plugin
 	thunar-volman
 ];
-
-users.users."bloods" = {
-	isNormalUser = true;
-	description = "bloods";
-	group = "bloods";
-	extraGroups = [ "networkmanager" "wheel" ];
-};
-
-users.groups.bloods = {};
-}
