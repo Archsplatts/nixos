@@ -27,3 +27,7 @@ programs.thunar.plugins = with pkgs; [
 	thunar-archive-plugin
 	thunar-volman
 ];
+
+  services.xserver.displayManager.lightdm.extraConfig = ''
+    greeter-setup-script=${pkgs.numlockx}/bin/numlockx on
+  '';   
