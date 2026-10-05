@@ -9,6 +9,7 @@
 		pkgs.impression
 		pkgs.galculator
 		pkgs.lollypop
+		pkgs.menulibre
 		pkgs.networkmanagerapplet
 		pkgs.picard
 		pkgs.qbittorrent
