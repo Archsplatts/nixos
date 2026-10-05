@@ -6,6 +6,5 @@
 		pkgs.lact
 		pkgs.mangohud
 		pkgs.protonup-qt
-		pkgs.steam
 	];
 }
