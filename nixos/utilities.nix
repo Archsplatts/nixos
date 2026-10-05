@@ -10,7 +10,6 @@
 		pkgs.fastfetch
 		pkgs.git
 		pkgs.micro
-		pkgs.starship
 		pkgs.termdown
 		pkgs.trash-cli
 		pkgs.unzip
