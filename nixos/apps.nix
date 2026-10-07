@@ -10,6 +10,7 @@
 		pkgs.galculator
 		pkgs.lollypop
 		pkgs.menulibre
+		pkgs.mpv
 		pkgs.networkmanagerapplet
 		pkgs.picard
 		pkgs.qbittorrent
