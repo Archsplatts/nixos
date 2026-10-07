@@ -12,8 +12,8 @@ case "$CHOSEN" in
         systemctl reboot
         ;;
 	"")
-	xf4lock
-	;;
+		xf4lock
+		;;
     "󰍃")
         xfce4-session-logout --logout
         ;;
