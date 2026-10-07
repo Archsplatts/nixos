@@ -28,6 +28,10 @@ programs.thunar.plugins = with pkgs; [
 	thunar-volman
 ];
 
+environment.xfce.excludePackages = with pkgs; [
+  	parole
+];
+
   services.xserver.displayManager.lightdm.extraConfig = ''
     greeter-setup-script=${pkgs.numlockx}/bin/numlockx on
   '';   
