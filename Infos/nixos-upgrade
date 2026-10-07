@@ -1,0 +1,18 @@
+# Changer le canal vers la nouvelle version
+nix-channel --add https://channels.nixos.org/nixos-26.11 nixos
+
+---
+
+# Appliquer la mise à niveau
+sudo nixos-rebuild switch --upgrade   
+
+---
+
+Pour une simple mise à jour (sans changer de version majeure), il suffit de :
+sudo nixos-rebuild switch --upgrade
+
+---
+
+Consultez les notes de version (release notes) avant de passer d'une version majeure à l'autre, 
+car certains paquets peuvent avoir changé de nom ou des options de configuration peuvent avoir 
+été modifiées. 
