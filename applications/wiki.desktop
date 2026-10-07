@@ -4,3 +4,4 @@ URL=https://wiki.nixos.org/wiki/NixOS_Wiki
 Icon=distributor-logo-nixos
 Name=Wiki
 Categories=Network
+Comment=Documentation officielle
