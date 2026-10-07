@@ -11,7 +11,7 @@ window {
 	modi: 				"drun";
 	show-icons: 		true;
 	border:           	3px;
-	border-color:		@teal;
+	border-color:		@blue;
 	icon-theme: 		"Papirus";
 	background-color:  	rgba(30,30,46,0.90);
 	transparency:		"real";
@@ -64,7 +64,7 @@ element alternate normal {
 element selected normal, element selected active {  
 	background-color: 	inherit;
     border-radius: 		8px;    
-    text-color:        	@teal;
+    text-color:        	@blue;
 }
 
 element-text {
