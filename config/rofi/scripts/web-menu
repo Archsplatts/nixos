@@ -1,41 +1,37 @@
-#!/bin/bash
+#!/bin/sh
 
-options="ArchWiki\0icon\x1farchlinux
-BraveSearch\0icon\x1fbrave
-Korben\0icon\x1fkorben
-MangoDocs\0icon\x1fmango
-Movix\0icon\x1fcom.github.artemanufrij.playmyvideos
-ProtonDB\0icon\x1fprotondb
-Twitch\0icon\x1ftwitch
+options="Ask Brave\0icon\x1fgnome-robots
+Films\0icon\x1fphotofilmstrip
+NixOS Wiki\0icon\x1fdistributor-logo-nixos
+Paquets Nix\0icon\x1fdistributor-logo-nixos
+ProtonDB\0icon\x1fdistributor-logo-steamos
+Twitch\0icon\x1ftwitch-indicator
 Youtube\0icon\x1fyoutube"
 
 selection=$(echo -e "$options" | rofi -dmenu -show-icons -icon-theme "Papirus" -config ~/.config/rofi/web-menu.rasi)
 
 if [[ -n "$selection" ]]; then
     case "$selection" in
-		"ArchWiki")
-   			brave-origin https://wiki.archlinux.org/title/Main_page
+		"Ask Brave")
+   		   	brave https://search.brave.com/ask
+   		   	;;
+   		"Films")
+   		   	brave https://movix.zip
+   		   	;;
+		"NixOS Wiki")
+   			brave https://wiki.nixos.org/wiki/NixOS_Wiki
    			;;
-   		"BraveSearch")
-   		   	brave-origin https://search.brave.com 
-   		   	 ;;  
-  		"Korben")
-  			brave-origin https://korben.info
+  		"Paquets Nix")
+  			brave https://search.nixos.org/packages
   			;;          
-		"MangoDocs")
-			brave-origin https://mangowm.github.io/docs
-			;;
-		"Movix")
-			brave-origin https://movix.bet
-			;;
         "ProtonDB")
-            brave-origin https://www.protondb.com
+            brave https://www.protondb.com
             ;;
 		"Twitch")
-			firefox https://www.twitch.tv/eloetcraquotte
+			brave https://www.twitch.tv
             ;;
         "Youtube")                    
-            brave-origin https://www.youtube.com
-             ;; 
+            brave https://www.youtube.com
+            ;; 
     esac
 fi   
