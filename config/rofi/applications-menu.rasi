@@ -27,7 +27,7 @@ configuration {
 window {
 	background-color:  	rgba(30,30,46,0.90);
 	border:           	3px;
-	border-color:		@teal;
+	border-color:		@blue;
     border-radius:  	8px;
 	padding:          	14px;
 	transparency:		"real";
@@ -88,7 +88,7 @@ element {
 
 element selected normal, element selected active {
 	background-color:	inherit;
-    text-color:			@teal;
+    text-color:			@blue;
 }
 
 element-icon {
