@@ -4,3 +4,4 @@ URL=https://search.nixos.org/packages
 Icon=distributor-logo-nixos
 Name=Paquets Nix
 Categories=Network
+Comment=Rechercher un paquet
