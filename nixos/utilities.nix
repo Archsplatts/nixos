@@ -13,7 +13,6 @@
 		pkgs.termdown
 		pkgs.trash-cli
 		pkgs.unzip
-		pkgs.webkitgtk_4_1
 		pkgs.xz
 		pkgs.yazi
 		pkgs.zip
