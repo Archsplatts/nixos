@@ -56,7 +56,14 @@
   	thunar-archive-plugin
   	thunar-volman
   ];
-  
+
+  gtk = {
+    enable = true;
+    theme = {
+      name = "catppuccin-gtk";
+    };
+  };
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "fr";
