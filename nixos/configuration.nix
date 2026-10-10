@@ -43,9 +43,11 @@
 
   # Enable the XFCE Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
+  
   services.xserver.displayManager.lightdm.extraConfig = ''
     greeter-setup-script=${pkgs.numlockx}/bin/numlockx on
   ''; 
+  
   services.xserver.desktopManager.xfce.enable = true;
 
   environment.xfce.excludePackages = with pkgs; [
