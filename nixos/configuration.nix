@@ -9,8 +9,7 @@
 		./utilities.nix
 	];
 
-hardware.amdgpu.overdrive.enable = false;
-programs.steam.enable = false;
+;
 
 boot.loader.systemd-boot.configurationLimit = 5;
 
