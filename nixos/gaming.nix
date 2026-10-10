@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
 	environment.systemPackages = [
@@ -7,4 +7,8 @@
 		pkgs.mangohud
 		pkgs.protonup-qt
 	];
+	
+	hardware.amdgpu.overdrive.enable = false;
+	
+	programs.steam.enable = false
 }
