@@ -19,6 +19,7 @@
 		pkgs.ristretto
 		pkgs.rofi
 		pkgs.thunderbird
+		pkgs.webkitgtk_4_1
 		pkgs.xfce4-whiskermenu-plugin
 		pkgs.zathura
 		pkgs.zathuraPkgs.zathura_pdf_mupdf
