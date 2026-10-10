@@ -5,6 +5,11 @@
 		pkgs.bibata-cursors
 		pkgs.catppuccin-papirus-folders
 		pkgs.papirus-folders
+		(pkgs.catppuccin-gtk.override {
+					accents = ["blue"];
+					size = "standard";
+					tweaks = ["rimless"];
+		})
 	];
 
 	fonts.packages = with pkgs; [
