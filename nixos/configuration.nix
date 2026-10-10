@@ -6,7 +6,6 @@
       ./apps.nix		
       ./hardware-configuration.nix
       ./theme.nix
-      ./utilities.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
