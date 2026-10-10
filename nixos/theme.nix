@@ -8,7 +8,8 @@
 		(pkgs.catppuccin-gtk.override {
 					accents = ["blue"];
 					size = "standard";
-					tweaks = ["rimless"];
+					tweaks = ["normal"];
+					variant = "mocha";
 		})
 	];
 
