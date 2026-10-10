@@ -2,14 +2,22 @@
 
 {
 	environment.systemPackages = [
+		pkgs.bat
+		pkgs.btop
 		pkgs.brave
+		pkgs.calcurse
 		pkgs.discord
+		pkgs.dust
+		pkgs.eza
+		pkgs.fastfetch
 		pkgs.file-roller
+		pkgs.git
 		pkgs.gnome-disk-utility
 		pkgs.impression
 		pkgs.galculator
 		pkgs.lollypop
 		pkgs.menulibre
+		pkgs.micro
 		pkgs.mpv
 		pkgs.networkmanagerapplet
 		pkgs.picard
@@ -18,10 +26,16 @@
 		pkgs.rhythmbox
 		pkgs.ristretto
 		pkgs.rofi
+		pkgs.termdown
 		pkgs.thunderbird
+		pkgs.trash-cli
+		pkgs.unzip
 		pkgs.webkitgtk_4_1
 		pkgs.xfce4-whiskermenu-plugin
+		pkgs.xz
+		pkgs.yazi
 		pkgs.zathura
 		pkgs.zathuraPkgs.zathura_pdf_mupdf
+		pkgs.zip
 	];
 }
