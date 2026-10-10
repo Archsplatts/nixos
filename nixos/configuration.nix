@@ -87,8 +87,6 @@
     isNormalUser = true;
     description = "bloods";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    ];
   };
 
   # Install firefox.
