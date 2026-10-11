@@ -1,0 +1,25 @@
+# Variables
+set $mod Mod4
+set $term foot
+set $menu rofi -modes "drun,run" -show drun -config ~/.config/rofi/gnome-menu.rasi
+set $filemanager thunar
+set $web firefox
+set $texteditor foot -e micro
+
+# Output configuration
+output HDMI-A-1 resolution 1920x1080 position 0,0
+output * bg ~/Images/Wallpapers/koi.jpg fill
+
+# Input configuration
+input type:keyboard { 
+	xkb_layout "fr" 
+	xkb_numlock enabled 
+}
+
+# Bar
+bar { 
+swaybar_command waybar 
+}
+
+include /etc/sway/config.d/*
+include ~/.config/sway/config.d/*

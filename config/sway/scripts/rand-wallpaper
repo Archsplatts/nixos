@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Définissez ici le chemin de votre dossier d'images
+WALLPAPER_DIR="$HOME/Images/Wallpapers"
+
+# Tuer l'instance existante de swaybg (si elle existe)
+pkill swaybg
+
+# Sélectionner une image aléatoire et lancer swaybg
+# La commande 'find' cherche les fichiers, 'shuf -n1' en prend un au hasard
+swaybg -i $(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | shuf -n1) -m fill &   

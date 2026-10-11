@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Afficher le menu et capturer la sélection
+selection=$(echo -e "󰢮  Carte graphique\n  Configuration Sway\n󰋊  Disques\n󰸉  Fond d'écran\n󱔓  Panneau\n󰤥  Réseau\n  Son\n󱥚  Thème"| rofi -dmenu -config ~/.config/rofi/menu-config.rasi)
+
+# Vérifier si une sélection a été faite
+if [[ -n "$selection" ]]; then
+    case "$selection" in
+        "󰢮  Carte graphique")
+			lact
+			;;
+		"  Configuration Sway")
+			foot --hold yazi ~/.config/sway
+			;;
+		"󰋊  Disques")
+			gnome-disks
+			;;
+		"󰸉  Fond d'écran")
+			~/.config/rofi/scripts/wallpaper-menu
+			;;
+		"󱔓  Panneau")
+			foot --hold yazi ~/.config/waybar
+			;;
+		"󰤥  Réseau")
+			nm-connexion-editor
+			;;
+		"  Son")
+			pavucontrol
+			;;
+		"󱥚  Thème")
+			nwg-look
+			;;
+    esac
+fi   
