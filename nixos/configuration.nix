@@ -95,7 +95,6 @@
   };
 
   system.autoUpgrade.allowReboot = false;
-  
   system.stateVersion = "26.05";
 
 }
