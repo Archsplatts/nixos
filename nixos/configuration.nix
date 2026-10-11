@@ -43,17 +43,17 @@
   environment.xfce.excludePackages = with pkgs; [
   	parole
   ]; 
-  
-  services.xserver.desktopManager.xfce.enable = true;
-
-  services.xserver.displayManager.lightdm.enable = true;
-  
-  services.xserver.numlock.enable = true; 
 
   programs.thunar.plugins = with pkgs; [
   	thunar-archive-plugin
   	thunar-volman
   ];
+
+  services.xserver.desktopManager.xfce.enable = true;
+
+  services.xserver.displayManager.lightdm.enable = true;
+  
+  services.xserver.numlock.enable = true; 
 
   # Configure keymap in X11
   services.xserver.xkb = {
