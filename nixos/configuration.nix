@@ -40,17 +40,15 @@
   services.xserver.enable = true;
 
   # Enable the XFCE Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  
-  services.xserver.displayManager.lightdm.extraConfig = ''
-    greeter-setup-script=${pkgs.numlockx}/bin/numlockx on
-  ''; 
+  environment.xfce.excludePackages = with pkgs; [
+  	parole
+  ]; 
   
   services.xserver.desktopManager.xfce.enable = true;
 
-  environment.xfce.excludePackages = with pkgs; [
-  	parole
-  ];
+  services.xserver.displayManager.lightdm.enable = true;
+  
+  services.xserver.numlock.enable = true; 
 
   programs.thunar.plugins = with pkgs; [
   	thunar-archive-plugin
