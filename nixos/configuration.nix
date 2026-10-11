@@ -63,6 +63,7 @@
   	extraPackages = with pkgs; [
     	autotiling
     	xfce4-i3-workspaces-plugin
+  	];
   ];
 
   # Configure keymap in X11
