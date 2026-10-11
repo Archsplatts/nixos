@@ -49,9 +49,21 @@
   	thunar-volman
   ];
 
-  services.xserver.desktopManager.xfce.enable = true;
+  #services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.desktopManager.xfce = {
+  enable = true;
+  enableXfwm = false;
+  };
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.numlock.enable = true; 
+
+  services.xserver.windowManager.i3 = {
+  	enable = true;
+  	package = pkgs.i3;
+  	extraPackages = with pkgs; [
+    	autotiling
+    	xfce4-i3-workspaces-plugin
+  ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
