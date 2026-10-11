@@ -50,9 +50,7 @@
   ];
 
   services.xserver.desktopManager.xfce.enable = true;
-
   services.xserver.displayManager.lightdm.enable = true;
-  
   services.xserver.numlock.enable = true; 
 
   # Configure keymap in X11
