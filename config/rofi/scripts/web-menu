@@ -28,7 +28,7 @@ if [[ -n "$selection" ]]; then
             brave https://www.protondb.com
             ;;
 		"Twitch")
-			brave https://www.twitch.tv
+			brave https://www.twitch.tv/directory
             ;;
         "Youtube")                    
             brave https://www.youtube.com
