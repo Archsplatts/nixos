@@ -46,6 +46,7 @@ cp -r $HOME/nixos/Infos $HOME/
 cp $HOME/nixos/bashrc $HOME/.bashrc
 cp $HOME/nixos/catppuccin-mocha.theme $HOME/.local/share/xfce4/terminal/colorschemes/
 cp $HOME/nixos/snowflakes.jpg $HOME/Images/Wallpapers/
+chmod u+x $HOME/.config/rofi/scripts/*
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[4/4] Génération de la configuration${NC}"
