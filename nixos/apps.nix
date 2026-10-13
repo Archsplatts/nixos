@@ -22,6 +22,7 @@
 		pkgs.mpv
 		pkgs.networkmanagerapplet
 		pkgs.picard
+		pkgs.picom
 		pkgs.qbittorrent
 		pkgs.redshift
 		pkgs.rhythmbox
