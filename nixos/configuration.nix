@@ -64,6 +64,10 @@
   # Enable CUPS to print documents.
   services.printing.enable = false;
 
+ # Disable services
+  systemd.services.ModemManager.enable = false;
+  systemd.services.NetworkManager-wait-online.enable = false;
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
