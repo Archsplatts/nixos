@@ -10,6 +10,7 @@
 		pkgs.dust
 		pkgs.eza
 		pkgs.fastfetch
+		pkgs.feh
 		pkgs.file-roller
 		pkgs.git
 		pkgs.gnome-disk-utility
@@ -26,6 +27,7 @@
 		pkgs.rhythmbox
 		pkgs.ristretto
 		pkgs.rofi
+		pkgs.spectrwm
 		pkgs.termdown
 		pkgs.thunderbird
 		pkgs.trash-cli
