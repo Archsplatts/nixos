@@ -2,7 +2,6 @@
 
 {
 	environment.systemPackages = [
-		pkgs.android-tools	
 		pkgs.bat
 		pkgs.btop
 		pkgs.brave
