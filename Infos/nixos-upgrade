@@ -1,24 +1,8 @@
 # Changer le canal vers la nouvelle version
 sudo nix-channel --add https://channels.nixos.org/nixos-26.11 nixos
 
----
-
-sudo nixos-rebuild dry-run --upgrade → si erreur, le message vous donne le nom de l'option concernée.
-
-Chercher cette option dans les release notes (section "Backward Incompatibilities") → elle vous indique le nouveau nom ou l'alternative.
-Corriger dans configuration.nix, relancer.
-
-Si le dry-run passe sans erreur, il n'y a rien à chercher — votre config est déjà compatible.
-
 # Appliquer la mise à niveau
 sudo nixos-rebuild switch --upgrade   
-
----
-
-Pour une simple mise à jour (sans changer de version majeure), il suffit de :
-sudo nixos-rebuild switch --upgrade
-
----
 
 Consultez les notes de version (release notes) avant de passer d'une version majeure à l'autre, 
 car certains paquets peuvent avoir changé de nom ou des options de configuration peuvent avoir 
