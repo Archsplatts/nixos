@@ -52,6 +52,18 @@
   services.xserver.desktopManager.xfce.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
 
+  services.xserver.displayManager.lightdm.greeters.gtk = {
+  	theme = {
+    	package = pkgs.catppuccin-gtk.override {
+      		accents = [ "blue" ];
+      		variant = "mocha";
+      		size = "standard";
+      		tweaks = [ "normal" ];
+    	};
+    name = "catppuccin-mocha-blue-standard+normal";
+   };
+}; 
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "fr";
