@@ -62,7 +62,17 @@
     	};
     name = "catppuccin-mocha-blue-standard+normal";
    };
-}; 
+
+   cursorTheme = {
+    name = "Bibata-Modern-Ice";
+    size = 24;
+    package = pkgs.bibata-cursors;
+  };
+
+  extraConfig = ''
+    font-name = Ubuntu Nerd Font 11
+  '';
+ }; 
 
   # Configure keymap in X11
   services.xserver.xkb = {
