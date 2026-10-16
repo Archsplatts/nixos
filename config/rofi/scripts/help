@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 KEYBINDING_FILE="$HOME/.config/rofi/help"
 
