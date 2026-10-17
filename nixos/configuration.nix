@@ -8,22 +8,18 @@
       ./theme.nix
     ];
 
-  # Use the systemd-boot EFI boot loader.
+  # ─── Boot ───────────────────────────────────────────────
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 5;
-  
-  networking.hostName = "nixos";
 
-  # Enable networking
+  # ─── Réseau ─────────────────────────────────────────────
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
+  # ─── Localisation ───────────────────────────────────────
   time.timeZone = "Europe/Paris";
-
-  # Select internationalisation properties.
   i18n.defaultLocale = "fr_FR.UTF-8";
-
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "fr_FR.UTF-8";
     LC_IDENTIFICATION = "fr_FR.UTF-8";
@@ -36,19 +32,8 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
-  # Enable the X11 windowing system.
+  # ─── Affichage / WM ─────────────────────────────────────  
   services.xserver.enable = true;
-
-  # Enable the XFCE Desktop Environment.
-  environment.xfce.excludePackages = with pkgs; [
-  	parole
-  ]; 
-
-  programs.thunar.plugins = with pkgs; [
-  	thunar-archive-plugin
-  	thunar-volman
-  ];
-
   services.xserver.desktopManager.xfce.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
 
@@ -74,23 +59,23 @@
   '';
  }; 
 
-  # Configure keymap in X11
   services.xserver.xkb = {
     layout = "fr";
     variant = "azerty";
   };
 
-  # Configure console keymap
   console.keyMap = "fr";
 
-  # Enable CUPS to print documents.
+  environment.xfce.excludePackages = with pkgs; [
+  	parole
+  ];
+  
+  # ─── Services désactivés ────────────────────────────────
   services.printing.enable = false;
-
- # Disable services
   systemd.services.ModemManager.enable = false;
   systemd.services.NetworkManager-wait-online.enable = false;
 
-  # Enable sound with pipewire.
+  # ─── Son ──────────────────────────────────────────────── 
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -101,25 +86,30 @@
     # jack.enable = true;
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # ─── Utilisateur ──────────────────────────────────────── 
   users.users."bloods" = {
     isNormalUser = true;
     description = "bloods";
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  # Install firefox.
+  # ─── Programmes ─────────────────────────────────────────
   programs.firefox.enable = true;
 
-  # Allow unfree packages
+  programs.thunar.plugins = with pkgs; [
+    thunar-archive-plugin
+    thunar-volman
+  ];
+  
+  # ─── Système ──────────────────────────────────────────── 
   nixpkgs.config.allowUnfree = true;
 
   system.autoUpgrade = {
   	enable = true;
 	dates = "Fri *-*-* 09:00:00";
+	allowReboot = false;
   };
 
-  system.autoUpgrade.allowReboot = false;
   system.stateVersion = "26.05";
 
 }
