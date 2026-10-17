@@ -5,11 +5,11 @@ configuration {
 }
 
 window {
-	background-color: 	rgba(30,30,46,0.90); 
+	background-color: 	rgba(30,30,46,0.95); 
 	border:           	3px; 
 	border-color:     	@blue;
 	border-radius:	  	8px;
-	padding: 			20px;
+	padding: 			12px;
 	transparency:       "real";
     width:            	340px;              
 }
@@ -27,6 +27,7 @@ listview {
 	flow: 		horizontal;
     lines:    	1;
 	scrollbar:	false;  
+	spacing:	8px;
 }
 
 inputbar {
@@ -38,19 +39,21 @@ element {
 }
 
 element selected normal, element selected active {  
-   	background-color:	inherit;
+   	background-color:	@surface0;
     border-radius: 		8px;
     padding: 			10px;
     text-color:        	@blue;
 }
 
 element normal normal {
-    background-color:	transparent;
+    background-color:	@surface0;
+	border-radius: 		8px;
     text-color: 		@text;
 }
 
 element alternate normal {
-    background-color:	transparent;
+    background-color:	@surface0;
+	border-radius: 		8px;
     text-color:			@text;
 }
 
