@@ -104,11 +104,11 @@
   # ─── Système ──────────────────────────────────────────── 
   nixpkgs.config.allowUnfree = true;
 
-  system.autoUpgrade = {
-  	enable = true;
-	dates = "Fri *-*-* 09:00:00";
-	allowReboot = false;
-  };
+  #system.autoUpgrade = {
+  #	enable = true;
+  #	dates = "Fri *-*-* 09:00:00";
+  #	allowReboot = false;
+  #};
 
   system.stateVersion = "26.05";
 
