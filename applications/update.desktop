@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Mise à jour
+Exec=/home/$USER/.scripts/update
+Icon=update-notifier
+Comment=nixos-rebuild switch --upgrade
+Categories=System
