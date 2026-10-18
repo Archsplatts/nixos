@@ -5,3 +5,4 @@ Icon=application-vnd.flatpak
 Name=Flathub
 Categories=Network
 Comment=Installer des flatpak
+Hidden=true
