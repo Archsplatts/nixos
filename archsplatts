@@ -53,6 +53,7 @@ echo -e "${JAUNE}[4/4] Génération de la configuration${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 sudo nixos-rebuild switch
+rm -rf $HOME/nixos
 
 echo -e "${VERT}╔════════════════════════════════════════╗${NC}"
 echo -e "${VERT}║  Installation terminée avec succès !   ║${NC}"
