@@ -37,10 +37,10 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 echo -e "${JAUNE}[3/4] Copie des dotfiles${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-mkdir -p $HOME/.local/share/applications/
-mkdir -p $HOME/.local/share/xfce4/terminal/colorschemes/
+mkdir -p $HOME/.local/share/applications
+mkdir -p $HOME/.local/share/xfce4/terminal/colorschemes
 mkdir -p $HOME/Documents/Infos
-mkdir -p $HOME/Images/Wallpapers/
+mkdir -p $HOME/Images/Wallpapers
 cp -r $HOME/nixos/applications/* $HOME/.local/share/applications/
 cp -r $HOME/nixos/config/* $HOME/.config/
 cp -r $HOME/nixos/Infos/* $HOME/Documents/Infos/
