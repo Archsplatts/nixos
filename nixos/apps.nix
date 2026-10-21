@@ -23,6 +23,7 @@
 		pkgs.networkmanagerapplet
 		pkgs.picard
 		pkgs.picom
+		pkgs.poppler
 		pkgs.qbittorrent
 		pkgs.redshift
 		pkgs.rhythmbox
