@@ -2,16 +2,21 @@ export BAT_THEME="Catppuccin Mocha"
 export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 
+#   Nix
+alias clean="sudo nix-collect-garbage"
+alias dg="sudo nix-env -p /nix/var/nix/profiles/system --delete-generations +5"
+alias ncg="sudo nix-collect-garbage"
+alias nrs="sudo nixos-rebuild switch"
+alias update="sudo nixos-rebuild switch --upgrade"
+alias upgrade="sudo nix-channel --add https://channels.nixos.org/nixos-26.11 nixos && sudo nixos-rebuild switch --upgrade"
+
+#   UTILS
 alias bashrc="micro $HOME/.bashrc && source $HOME/.bashrc"
 alias cdt="cd $HOME/Téléchargements"
 alias class="xprop | grep WM_CLASS"
-alias dg="sudo nix-env -p /nix/var/nix/profiles/system --delete-generations +5"
+alias conf="micro /etc/nixos/configuration.nix"
 alias ff="fastfetch"
 alias fm="yazi"
 alias ls="eza --icons -1 --group-directories-first"
 alias rm="trash -v"
-alias ncg="sudo nix-collect-garbage"
-alias nrs="sudo nixos-rebuild switch"
 alias svl="systemctl list-unit-files --state=enabled"
-alias update="sudo nixos-rebuild switch --upgrade"
-alias upgrade="sudo nix-channel --add https://channels.nixos.org/nixos-26.11 nixos && sudo nixos-rebuild switch --upgrade"
